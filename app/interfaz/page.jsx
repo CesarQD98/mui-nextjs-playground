@@ -1,4 +1,4 @@
-import { Container, Grid, Paper, Stack, Typography } from '@mui/material'
+import { Grid, Paper, Typography } from '@mui/material'
 import VideoMonitor from '../components/VideoMonitor'
 
 export default function ClientInterface () {

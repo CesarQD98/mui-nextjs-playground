@@ -1,9 +1,12 @@
-import { Paper, Typography } from '@mui/material'
+import { Box, Paper } from '@mui/material'
+import CustomStream from './CustomStream'
 
-export default function VideoMonitor ({ filterName }) {
+export default function VideoMonitor ({ videoUrl }) {
   return (
-    <Paper sx={{ minHeight: '780px', padding: '8px' }} elevation={8}>
-      <Typography fontWeight='bold' variant='h3'>{filterName}</Typography>
+    <Paper sx={{ display: 'flex', flexDirection: 'column', height: '100%', overflow: 'hidden' }} elevation={4}>
+      <Box sx={{ backgroundColor: '#cfecf7', flex: '1', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+        <CustomStream videoUrl={videoUrl} />
+      </Box>
     </Paper>
   )
 }

@@ -1,3 +1,4 @@
+import './global.css'
 export const metadata = {
   title: 'Home Page',
   description: 'MUI + Next.js Playground'
